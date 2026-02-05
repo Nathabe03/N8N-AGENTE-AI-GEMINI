@@ -15,7 +15,7 @@
       ],
       "id": "39814410-d83f-4d8f-b0e2-cd84f0beb360",
       "name": "Webhook",
-      "webhookId": "8f3f48c6-da82-4d96-ad80-3df3f20b9b02"
+      "webhookId": ""
     },
     {
       "parameters": {
@@ -32,7 +32,7 @@
         208,
         0
       ],
-      "id": "74a0e994-2cf6-4f69-b6e0-d87ba1abf951",
+      "id": "",
       "name": "AI Agent"
     },
     {
@@ -45,11 +45,11 @@
         80,
         208
       ],
-      "id": "3dae0ec1-e10f-4896-823f-3d123eac7690",
+      "id": " ",
       "name": "Google Gemini Chat Model",
       "credentials": {
         "googlePalmApi": {
-          "id": "VJil4ipIf5Lavo80",
+          "id": " ",
           "name": "Google Gemini(PaLM) Api account"
         }
       }
@@ -76,11 +76,11 @@
         528,
         208
       ],
-      "id": "fb20ae89-3780-4548-aeeb-6cf57db0a439",
+      "id": " ",
       "name": "Get row(s) in sheet in Google Sheets",
       "credentials": {
         "googleSheetsOAuth2Api": {
-          "id": "TSOr57MQFvMVSO5S",
+          "id": " ",
           "name": "Google Sheets account"
         }
       }
@@ -95,7 +95,7 @@
         384,
         208
       ],
-      "id": "cb9bc40d-c2ec-4a20-95ec-3d1d88435a63",
+      "id": " ",
       "name": "Structured Output Parser"
     },
     {
@@ -109,7 +109,7 @@
           },
           "conditions": [
             {
-              "id": "91b6c405-c264-4684-837b-0d7c79e1ea39",
+              "id": " ",
               "leftValue": "={{ $json.output.dias_desde_compra }}",
               "rightValue": 7,
               "operator": {
@@ -128,7 +128,7 @@
         560,
         0
       ],
-      "id": "a4453384-d0b5-46f8-b074-6b2e89df81b7",
+      "id": " ",
       "name": "If"
     },
     {
@@ -142,7 +142,7 @@
         752,
         -208
       ],
-      "id": "add1b26c-119b-4c31-a424-630366edf5af",
+      "id": " ",
       "name": "Sticky Note"
     },
     {
@@ -157,7 +157,7 @@
         752,
         0
       ],
-      "id": "d988932f-e686-49a1-9ca7-79e8c8c7e11a",
+      "id": " ",
       "name": "Sticky Note1"
     },
     {
@@ -173,7 +173,7 @@
         752,
         192
       ],
-      "id": "117fed3c-5f1b-4326-906f-90bd7b1d1f1b",
+      "id": " ",
       "name": "Sticky Note2"
     },
     {
@@ -187,7 +187,7 @@
           },
           "conditions": [
             {
-              "id": "5c84dac8-93e3-4861-8332-8b4707effbc6",
+              "id": " ",
               "leftValue": "={{ $('AI Agent').item.json.output.total_gasto_cliente }}",
               "rightValue": 3000,
               "operator": {
@@ -196,7 +196,7 @@
               }
             },
             {
-              "id": "683789ae-e4d8-4f23-b482-b904ce59033a",
+              "id": " ",
               "leftValue": "={{ $('AI Agent').item.json.output.sentimento }}",
               "rightValue": "muito_negativo",
               "operator": {
@@ -215,7 +215,7 @@
         752,
         -176
       ],
-      "id": "419d6ae5-8725-4547-beca-9e2da4a57d5e",
+      "id": " ",
       "name": "If1"
     },
     {
@@ -233,12 +233,12 @@
         1024,
         -192
       ],
-      "id": "7b8f0210-5d1e-4d43-b731-57dd9dc1beac",
+      "id": " ",
       "name": "Send a message",
-      "webhookId": "c4105a3d-6c3a-407f-852f-e06278135b7a",
+      "webhookId": " ",
       "credentials": {
         "gmailOAuth2": {
-          "id": "sm66XNaSB0peCtql",
+          "id": " ",
           "name": "Gmail account"
         }
       }
@@ -254,7 +254,7 @@
           },
           "conditions": [
             {
-              "id": "deea6d25-733c-4ec1-b5f4-382c196a305d",
+              "id": " ",
               "leftValue": "={{ $('AI Agent').item.json.output.total_gasto_cliente }}",
               "rightValue": 3000,
               "operator": {
@@ -273,7 +273,7 @@
         800,
         32
       ],
-      "id": "b4fbb5d6-7950-4bad-96f9-298415b930bd",
+      "id": " ",
       "name": "If2"
     },
     {
@@ -291,12 +291,12 @@
         1024,
         16
       ],
-      "id": "bfe1a031-1c12-482b-aa6a-6db65948bb4b",
+      "id": " ",
       "name": "Send a message1",
-      "webhookId": "c4105a3d-6c3a-407f-852f-e06278135b7a",
+      "webhookId": " ",
       "credentials": {
         "gmailOAuth2": {
-          "id": "sm66XNaSB0peCtql",
+          "id": "",
           "name": "Gmail account"
         }
       }
@@ -312,7 +312,7 @@
           },
           "conditions": [
             {
-              "id": "0ff8f92a-769c-46a2-9cb4-7a63263c2013",
+              "id": "",
               "leftValue": "={{ $('AI Agent').item.json.output.sentimento }}",
               "rightValue": "muito_negativo",
               "operator": {
@@ -331,7 +331,7 @@
         800,
         240
       ],
-      "id": "14c54e02-9b6f-4c6d-8f7d-61dbf2ee74c2",
+      "id": "",
       "name": "If3"
     },
     {
@@ -349,19 +349,19 @@
         1024,
         224
       ],
-      "id": "3b8cfbec-d79e-4136-b2cd-828413737990",
+      "id": "",
       "name": "Send a message2",
-      "webhookId": "c4105a3d-6c3a-407f-852f-e06278135b7a",
+      "webhookId": "",
       "credentials": {
         "gmailOAuth2": {
-          "id": "sm66XNaSB0peCtql",
+          "id": "",
           "name": "Gmail account"
         }
       }
     },
     {
       "parameters": {
-        "chatId": "7180529568",
+        "chatId": " ",
         "text": "=[Pedido de Reembolso fora do Prazo]  Pessoal, chegou um pedido de reembolso de um cliente que estourou o prazo de 7 dias (tá com {{ $('AI Agent').item.json.output.dias_desde_compra }} dias). O sistema barrou, mas como ele é VIP, peço que verifiquem com atenção e avaliem reembolsar o aluno. Avisei pra ele que a gente ia analisar com carinho e dar um retorno em 24h. Conseguem ver com o financeiro se liberamos essa exceção pra não perder o cliente? Cliente: {{ $('AI Agent').item.json.output.nome }} \nE-mail:  {{ $('AI Agent').item.json.output.email }}\nProduto: {{ $('AI Agent').item.json.output.produto_reembolso }}",
         "additionalFields": {
           "appendAttribution": false
@@ -373,19 +373,19 @@
         1232,
         16
       ],
-      "id": "726322be-732a-4aa4-8045-1839059a6880",
+      "id": "",
       "name": "Send a text message",
-      "webhookId": "9f5e1688-87ce-4464-bd56-31ab121fa372",
+      "webhookId": "",
       "credentials": {
         "telegramApi": {
-          "id": "tGIz9C05D8AaMEU6",
+          "id": "",
           "name": "AGENTE TELEGRAM IA"
         }
       }
     },
     {
       "parameters": {
-        "chatId": "7180529568",
+        "chatId": " ",
         "text": "=⚠️ Atenção aqui, gente.\nTemos um cliente que pediu reembolso fora do prazo, mas mandou uma mensagem bem pesada..\nO comentário dele foi esse: \"{{ $('AI Agent').item.json.output.comentario }}\"\nPra evitar que ele vá pro Reclame Aqui ou procon, eu já respondi dizendo que escalei o caso pra gerência. Conseguem dar uma atenção pra esse caso por favor?\nCliente: {{ $('AI Agent').item.json.output.nome }}\nE-mail: {{ $('AI Agent').item.json.output.email }}\nProduto: {{ $('AI Agent').item.json.output.produto_reembolso }}\n",
         "additionalFields": {
           "appendAttribution": false
@@ -397,12 +397,12 @@
         1232,
         224
       ],
-      "id": "b21f97b5-6fc1-4f27-89f3-90ca4959cd6f",
+      "id": "",
       "name": "Send a text message1",
-      "webhookId": "9f5e1688-87ce-4464-bd56-31ab121fa372",
+      "webhookId": "",
       "credentials": {
         "telegramApi": {
-          "id": "tGIz9C05D8AaMEU6",
+          "id": "",
           "name": "AGENTE TELEGRAM IA"
         }
       }
@@ -418,7 +418,7 @@
             "content-length": "1187",
             "accept": "application/json, text/plain, */*",
             "accept-encoding": "gzip, br",
-            "baggage": "sentry-environment=production,sentry-release=4c2e48e57faa06db96a975192c30c64ed5084765,sentry-public_key=6af4b6673f1648edaa8fef3f2ca43405,sentry-trace_id=1abd760574184e7729e8c4eec5b6e1ba,sentry-org_id=407628",
+            "baggage": "sentry-environment=production,sentry-release=4c2e48e57faa06db96a975192c30c64ed5084765,8",
             "cdn-loop": "cloudflare; loops=1; subreqs=1",
             "cf-connecting-ip": "34.96.62.4",
             "cf-ew-via": "15",
@@ -439,31 +439,31 @@
           "params": {},
           "query": {},
           "body": {
-            "eventId": "14adece0-be9e-46d3-8455-60a10b4bb5b6",
+            "eventId": "",
             "eventType": "FORM_RESPONSE",
             "createdAt": "2026-02-05T04:11:05.137Z",
             "data": {
-              "responseId": "NpzqD0l",
-              "submissionId": "NpzqD0l",
-              "respondentId": "81dg18O",
-              "formId": "2EPYGp",
+              "responseId": "",
+              "submissionId": "",
+              "respondentId": "",
+              "formId": "",
               "formName": "Formulário de Reembolso",
               "createdAt": "2026-02-05T04:11:05.000Z",
               "fields": [
                 {
-                  "key": "question_d65obA",
+                  "key": "",
                   "label": "Nome completo",
                   "type": "INPUT_TEXT",
                   "value": "zeca"
                 },
                 {
-                  "key": "question_YQLbjd",
+                  "key": "",
                   "label": "Qual seu melhor e-mail?",
                   "type": "INPUT_EMAIL",
                   "value": "bruno.1@email.com"
                 },
                 {
-                  "key": "question_DNloq5",
+                  "key": "",
                   "label": "Qual produto que você deseja reembolso?",
                   "type": "MULTIPLE_CHOICE",
                   "value": [
@@ -471,29 +471,29 @@
                   ],
                   "options": [
                     {
-                      "id": "51cc2c66-6317-4258-b91f-e129eea9fd68",
+                      "id": "",
                       "text": "Software de Contabilidade"
                     },
                     {
-                      "id": "3c82d2e9-844d-4d71-bd7f-35fd8650f5d8",
+                      "id": "",
                       "text": "Software de Gestão de Projetos"
                     },
                     {
-                      "id": "de55160c-3ecd-4878-9da4-b107d5fd1860",
+                      "id": "",
                       "text": "Software de edição de vídeo"
                     },
                     {
-                      "id": "0a1f5414-93f9-4aeb-a085-d6bd3b4a19a0",
+                      "id": "",
                       "text": "Plataforma de sites"
                     },
                     {
-                      "id": "f3f5af82-fe12-4d9b-9dd9-ef19c1b61be0",
+                      "id": "",
                       "text": "Plataforma de vendas"
                     }
                   ]
                 },
                 {
-                  "key": "question_lyPjaW",
+                  "key": "",
                   "label": "Comente aqui o que houve",
                   "type": "TEXTAREA",
                   "value": "nao funcionou, quero reembolso"
@@ -653,11 +653,11 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "9f1a155f-eb04-47de-b972-86d0097a5679",
+  "versionId": "",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "4957fc044f69c5f7cfdb75067ff82bca53f09edf5f0624781d95e1427cd38310"
+    "instanceId": ""
   },
-  "id": "KcKGp6Ace4-YYQ0Sx8t0L",
+  "id": "",
   "tags": []
 }
